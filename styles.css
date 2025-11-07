@@ -1,115 +1,122 @@
 /* Page Background */
 body {
-  margin: 0;
-  padding: 0;
-  background-color: #e0e0e0; /* light gray for background */
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 2rem 0;
+    background-image: url('https://www.transparenttextures.com/patterns/diagonal-noise.png'); /* clean stripe pattern */
+    background-color: #fefefe;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 40px;
 }
 
 /* Paper Style */
 .resume-paper {
-  width: 8.5in;
-  min-height: 11in;
-  background: #ffffff; /* white paper */
-  padding: 1in;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
-  box-sizing: border-box;
+    width: 8.5in;
+    min-height: 11in;
+    background: #ffffff; /* white paper */
+    padding: 1in;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    box-sizing: border-box;
 }
 
 /* Header */
-.header {
-  text-align: center;
-  margin-bottom: 1em;
+h1 {
+    font-family: 'Great Vibes', cursive;
+    color: #4B0082;
+    text-align: center;
+    font-size: 48px;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 
-.header h1 {
-  margin: 0;
-  font-size: 2.4rem;
-  color: #0a3d62;
-}
-
-.header h2 {
-  margin: 0.1em 0 0.5em;
-  font-size: 1.2rem;
-  color: #555;
+h2 {
+    text-align: center;
+    color: #333333;
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 20px;
 }
 
 .header .contact {
-  font-size: 0.9rem;
-  color: #555;
+    text-align: center;
+    font-size: 14px;
+    color: #555555;
+    margin-bottom: 30px;
 }
 
 /* Section Titles */
 section h3 {
-  font-size: 1.1rem;
-  color: #0a3d62;
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 0.2em;
-  margin-bottom: 0.5em;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
+    font-size: 20px;
+    color: #4B0082;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
 }
 
 /* Text Sections */
-.summary p, .education p, .skills-list li, .experience .job ul li {
-  font-size: 0.95rem;
-  line-height: 1.5;
+p {
+    color: #333333;
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 0 0;
+    margin-bottom: 15px;
+}
+
+li {
+    color: #006666;
+    font-size: 16px;
+    margin-left: 40px;
+    margin-bottom: 8px;
 }
 
 /* Experience */
 .experience .job {
-  margin-bottom: 1em;
+    margin-bottom: 20px;
 }
 
 .experience .job h4 {
-  margin: 0;
-  font-size: 1rem;
-  font-weight: bold;
-  color: #333;
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333333;
 }
 
 .experience .job .dates {
-  font-size: 0.85rem;
-  color: #777;
-  margin-bottom: 0.25em;
-  display: block;
+    font-size: 14px;
+    color: #777777;
+    margin-bottom: 8px;
+    display: block;
 }
 
 /* Skills */
 .skills-list {
-  list-style: none;
-  padding: 0;
-  columns: 2;
-  column-gap: 1in;
-}
-
-.skills-list li {
-  margin-bottom: 0.25em;
+    list-style: disc;
+    padding-left: 20px;
 }
 
 /* Download button */
 footer.download {
-  text-align: center;
-  margin-top: 2em;
+    text-align: center;
+    margin-top: 30px;
 }
 
 footer.download button {
-  padding: 0.5em 1.2em;
-  background: #0a3d62;
-  color: #fff;
-  border: none;
-  border-radius: 0.3rem;
-  cursor: pointer;
-  font-size: 0.95rem;
+    padding: 0.5em 1.2em;
+    background: #4B0082;
+    color: #fff;
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    font-size: 16px;
 }
 
 /* Print styling */
 @media print {
-  body { background: none; }
-  .resume-paper { box-shadow: none; margin: 0; }
-  footer.download { display: none; }
+    body { background: none; }
+    .resume-paper { box-shadow: none; margin: 0; }
+    footer.download { display: none; }
 }
