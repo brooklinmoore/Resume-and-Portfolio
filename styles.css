@@ -7,7 +7,7 @@ body {
     padding: 0;
     display: flex;
     justify-content: center;
-    padding-top: 40px;
+    padding-top: 50px;
 }
 
 /* Paper */
@@ -15,8 +15,8 @@ body {
     width: 8.5in;
     min-height: 11in;
     background: #ffffff;
-    padding: 1in;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    padding: 1.2in;
+    box-shadow: 0 12px 35px rgba(0,0,0,0.2);
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -25,7 +25,7 @@ body {
 /* Header */
 .header {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 
 .header h1 {
@@ -35,9 +35,9 @@ body {
 }
 
 .header h2 {
-    font-size: 20px;
+    font-size: 22px;
     color: #1A2238; /* midnight blue accent */
-    margin: 10px 0 10px;
+    margin: 10px 0 15px;
     letter-spacing: 1px;
     font-weight: 600;
 }
@@ -52,87 +52,89 @@ body {
 .resume-content {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    column-gap: 50px;
+    column-gap: 60px;
 }
 
 /* Left Column */
 .left-column section {
-    margin-bottom: 30px;
+    margin-bottom: 35px;
 }
 
 /* Right Column */
 .right-column section {
-    margin-bottom: 30px;
+    margin-bottom: 35px;
 }
 
 /* Boxes & Headers */
 .box {
     border: 1px solid #1A2238; /* subtle midnight blue border */
-    padding: 15px;
-    margin-bottom: 25px;
-    border-radius: 5px;
-    box-shadow: 1px 1px 5px rgba(0,0,0,0.05);
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 6px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.05);
 }
 
 /* Section Headers with black rectangle + white text */
 section h3 {
-    font-size: 20px;
+    font-size: 22px;
     color: white;
     background-color: black;
-    padding: 5px 10px;
-    margin-bottom: 15px;
+    padding: 8px 12px;
+    margin-bottom: 18px;
     text-transform: uppercase;
     letter-spacing: 0.05em;
     display: inline-block;
+    border-radius: 3px;
 }
 
 /* Paragraphs */
 p {
     font-size: 16px;
-    line-height: 1.6;
+    line-height: 1.8;
     color: black;
-    margin-bottom: 15px;
+    margin-bottom: 18px;
 }
 
 /* Lists */
 ul {
-    padding-left: 20px;
-    margin: 0;
+    padding-left: 25px;
+    margin: 0 0 18px 0;
 }
 
 li {
     font-size: 16px;
     color: #1A2238; /* midnight blue for list items */
-    margin-bottom: 8px;
+    margin-bottom: 10px;
+    line-height: 1.6;
 }
 
 /* Jobs */
 .experience .job {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 .experience .job h4 {
     font-size: 18px;
     font-weight: bold;
     color: black;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
 }
 
 .experience .job .dates {
     font-size: 14px;
     color: #555;
     display: block;
-    margin-bottom: 8px;
+    margin-bottom: 12px;
 }
 
 /* Button */
 footer.download {
     text-align: center;
-    margin-top: 30px;
+    margin-top: 40px;
 }
 
 footer.download button {
-    padding: 0.5em 1.2em;
+    padding: 0.6em 1.5em;
     background: #1A2238; /* midnight blue */
     color: #fff;
     border: none;
