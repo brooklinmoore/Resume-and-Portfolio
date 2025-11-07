@@ -26,32 +26,37 @@ body {
 }
 
 /* Header */
+/* Header */
 .header {
     text-align: center;
     margin-bottom: 40px;
 }
 
+/* Name with thin black outline */
 .header h1 {
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 48px;
-    font-weight: 300; /* ultra-light */
+    font-weight: 300;
     color: black;
     margin: 0;
+    display: inline-block;
+    padding: 5px 15px;
+    border: 1px solid black; /* thin rectangle around name */
+    border-radius: 4px;
 }
 
+/* Title with black background box */
 .header h2 {
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 22px;
     font-weight: 300;
-    color: #1A2238; /* midnight blue accent */
+    color: white;
+    background-color: black; /* black box behind title */
+    display: inline-block;
+    padding: 5px 12px;
     margin: 10px 0 15px;
     letter-spacing: 1px;
-}
-
-.header .contact {
-    font-size: 14px;
-    color: #333;
-    margin-top: 5px;
+    border-radius: 3px;
 }
 
 /* Resume Content */
