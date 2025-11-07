@@ -1,112 +1,136 @@
-/* Page Background with pattern */
+/* Background & Body */
 body {
-    background-image: url('https://www.transparenttextures.com/patterns/diagonal-noise.png');
-    background-color: #fefefe;
-    font-family: 'Open Sans', sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    padding-top: 40px;
+  background-image: url('https://www.transparenttextures.com/patterns/diagonal-noise.png');
+  background-color: #fefefe;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
 }
 
-/* Paper-like resume block */
+/* Paper */
 .resume-paper {
-    width: 8.5in;
-    min-height: 11in;
-    background: #ffffff;
-    padding: 1in;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
-    box-sizing: border-box;
+  width: 8.5in;
+  min-height: 11in;
+  background: #ffffff;
+  padding: 1in;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Header */
 .header {
-    text-align: center;
-    margin-bottom: 30px;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
-h1 {
-    font-size: 48px;
-    margin: 0;
+.header h1 {
+  font-size: 48px;
+  color: #4B0082;
+  margin: 0;
 }
 
-h2 {
-    font-size: 20px;
-    margin: 10px 0 20px;
-    color: #333333;
+.header h2 {
+  font-size: 20px;
+  color: #333;
+  margin: 10px 0 10px;
 }
 
 .header .contact {
-    font-size: 14px;
-    color: #555555;
+  font-size: 14px;
+  color: #555;
 }
 
-/* Section titles */
+/* Resume Content Grid */
+.resume-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  column-gap: 40px;
+}
+
+/* Left Column */
+.left-column section {
+  margin-bottom: 30px;
+}
+
+/* Right Column */
+.right-column section {
+  margin-bottom: 30px;
+}
+
+/* Section Titles */
 section h3 {
-    font-size: 20px;
-    border-bottom: 1px solid #ccc;
-    padding-bottom: 5px;
-    margin-bottom: 15px;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
+  font-size: 20px;
+  color: #4B0082;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 /* Paragraphs */
 p {
-    font-size: 16px;
-    line-height: 1.6;
-    color: #333333;
-    margin-bottom: 15px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 15px;
 }
 
 /* Lists */
-li {
-    font-size: 16px;
-    color: #006666;
-    margin-left: 40px;
-    margin-bottom: 8px;
+ul {
+  padding-left: 20px;
+  margin: 0;
 }
 
-/* Experience styling */
+li {
+  font-size: 16px;
+  color: #006666;
+  margin-bottom: 8px;
+}
+
+/* Jobs */
 .experience .job {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .experience .job h4 {
-    font-size: 18px;
-    font-weight: bold;
-    color: #333333;
-    margin-bottom: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
 }
 
 .experience .job .dates {
-    font-size: 14px;
-    color: #777777;
-    margin-bottom: 8px;
-    display: block;
+  font-size: 14px;
+  color: #777;
+  display: block;
+  margin-bottom: 8px;
 }
 
-/* Download button */
+/* Button */
 footer.download {
-    text-align: center;
-    margin-top: 30px;
+  text-align: center;
+  margin-top: 30px;
 }
 
 footer.download button {
-    padding: 0.5em 1.2em;
-    background: #4B0082;
-    color: #fff;
-    border: none;
-    border-radius: 0.3rem;
-    cursor: pointer;
-    font-size: 16px;
+  padding: 0.5em 1.2em;
+  background: #4B0082;
+  color: #fff;
+  border: none;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  font-size: 16px;
 }
 
 /* Print styling */
 @media print {
-    body { background: none; }
-    .resume-paper { box-shadow: none; margin: 0; }
-    footer.download { display: none; }
+  body { background: none; }
+  .resume-paper { box-shadow: none; margin: 0; }
+  footer.download { display: none; }
 }
