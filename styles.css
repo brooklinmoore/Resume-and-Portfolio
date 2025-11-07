@@ -1,4 +1,7 @@
-/* Background & Body */
+/* Import skinny Google Font for headers */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+
+/* Body & Background */
 body {
     background-image: url('https://www.transparenttextures.com/patterns/diagonal-noise.png');
     background-color: #fefefe;
@@ -7,10 +10,10 @@ body {
     padding: 0;
     display: flex;
     justify-content: center;
-    padding-top: 50px;
+    padding-top: 40px;
 }
 
-/* Paper */
+/* Resume Paper */
 .resume-paper {
     width: 8.5in;
     min-height: 11in;
@@ -20,6 +23,7 @@ body {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
+    row-gap: 35px;
 }
 
 /* Header */
@@ -29,17 +33,20 @@ body {
 }
 
 .header h1 {
+    font-family: 'Roboto Condensed', sans-serif;
     font-size: 48px;
+    font-weight: 700;
     color: black;
     margin: 0;
 }
 
 .header h2 {
+    font-family: 'Roboto Condensed', sans-serif;
     font-size: 22px;
+    font-weight: 400;
     color: #1A2238; /* midnight blue accent */
     margin: 10px 0 15px;
     letter-spacing: 1px;
-    font-weight: 600;
 }
 
 .header .contact {
@@ -48,35 +55,26 @@ body {
     margin-top: 5px;
 }
 
-/* Resume Content Grid */
+/* Resume Content */
 .resume-content {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    column-gap: 60px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 35px;
 }
 
-/* Left Column */
-.left-column section {
-    margin-bottom: 35px;
-}
-
-/* Right Column */
-.right-column section {
-    margin-bottom: 35px;
-}
-
-/* Boxes & Headers */
+/* Section Boxes */
 .box {
-    border: 1px solid #1A2238; /* subtle midnight blue border */
+    border: 1px solid #1A2238;
     padding: 20px;
-    margin-bottom: 30px;
     border-radius: 6px;
     box-shadow: 2px 2px 8px rgba(0,0,0,0.05);
 }
 
-/* Section Headers with black rectangle + white text */
+/* Section Headers */
 section h3 {
+    font-family: 'Roboto Condensed', sans-serif;
     font-size: 22px;
+    font-weight: 700;
     color: white;
     background-color: black;
     padding: 8px 12px;
@@ -103,12 +101,12 @@ ul {
 
 li {
     font-size: 16px;
-    color: #1A2238; /* midnight blue for list items */
+    color: #1A2238;
     margin-bottom: 10px;
     line-height: 1.6;
 }
 
-/* Jobs */
+/* Experience Jobs */
 .experience .job {
     margin-bottom: 25px;
 }
@@ -127,7 +125,7 @@ li {
     margin-bottom: 12px;
 }
 
-/* Button */
+/* Download Button */
 footer.download {
     text-align: center;
     margin-top: 40px;
@@ -135,7 +133,7 @@ footer.download {
 
 footer.download button {
     padding: 0.6em 1.5em;
-    background: #1A2238; /* midnight blue */
+    background: #1A2238;
     color: #fff;
     border: none;
     border-radius: 0.3rem;
@@ -143,7 +141,7 @@ footer.download button {
     font-size: 16px;
 }
 
-/* Print styling */
+/* Print Styling */
 @media print {
     body { background: none; }
     .resume-paper { box-shadow: none; margin: 0; }
